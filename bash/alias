@@ -1,0 +1,38 @@
+# ALIASES
+
+alias ls="ls -G"
+alias l='ls -la'
+alias sites='cd ~/Sites/'
+alias desk='cd ~/Desktop/'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
+alias slime='open $@ -a Sublime\ Text\ 2'
+alias restartApache='sudo apachectl restart'
+alias artisan='php artisan'
+alias art='artisan'
+
+
+alias selenium='java -jar /usr/local/opt/selenium-server-standalone/selenium-server-standalone-2.35.0.jar -p 4444'
+alias sel='selenium'
+
+alias pc='./.git/hooks/pre-commit/'
+alias mou='open $@ -a Mou'
+
+take () {
+  mkdir $1
+  cd $1
+}
+
+new () {
+  touch $1
+  slime $1
+}
+
+# L4L
+lead () {
+  cd ~/Sites/Link4Lead/app
+  clear
+}
+alias testFront='cd ~/Sites/Link4Lead/app/mvc/Tests/Features/FrontOffice'
+alias hat='mvc/ExtLib/Vendor/bin/behat -c ~/Sites/Link4Lead/www/app/Tests/Acceptance/FrontOffice/behat.yml -p anb'

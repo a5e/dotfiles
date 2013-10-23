@@ -1,0 +1,11 @@
+# my bashrc file
+
+source ~/bin/dotfiles/bash/env
+source ~/bin/dotfiles/bash/alias
+source ~/bin/dotfiles/bash/prompt
+
+# RVM
+source ~/.rvm/scripts/rvm
+
+# Set the vim mode for the terminal
+set -o vi

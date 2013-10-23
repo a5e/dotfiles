@@ -1,0 +1,13 @@
+# ENVIRONMENT
+
+# Brew
+export PATH="/usr/local/sbin:$PATH"
+
+# PHP http://php-osx.liip.ch/
+export PATH="/usr/local/php5/bin:$PATH"
+
+# Local binaries
+export PATH="~/bin:$PATH"
+
+# L4L
+export APPLICATION_ENV="anb"
