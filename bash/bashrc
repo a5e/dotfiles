@@ -7,5 +7,3 @@ source ~/bin/dotfiles/bash/prompt
 # RVM
 source ~/.rvm/scripts/rvm
 
-# Set the vim mode for the terminal
-set -o vi

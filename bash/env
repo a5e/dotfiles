@@ -9,5 +9,14 @@ export PATH="/usr/local/php5/bin:$PATH"
 # Local binaries
 export PATH="~/bin:$PATH"
 
-# L4L
-export APPLICATION_ENV="anb"
+# RVM
+export PATH="$HOME/.rvm/bin:$PATH"
+
+# Heroku
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# PSQL
+export PATH="/Applications/Postgres.app/Contents/Versions/9.3/bin:$PATH:"
+
+# Sublime Text by default
+export EDITOR='subl -w'
