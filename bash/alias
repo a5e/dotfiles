@@ -7,7 +7,6 @@ alias desk='cd ~/Desktop/'
 alias ..='cd ../'
 alias ...='cd ../../'
 alias server='open http://localhost:8000 && python -m SimpleHTTPServer'
-alias slime='open $@ -a Sublime\ Text\ 2'
 alias restartApache='sudo apachectl restart'
 alias artisan='php artisan'
 alias art='artisan'
@@ -17,6 +16,7 @@ alias selenium='java -jar /usr/local/opt/selenium-server-standalone/selenium-ser
 alias sel='selenium'
 
 alias pc='./.git/hooks/pre-commit/'
+alias pm='./.git/hooks/post-merge/'
 alias mou='open $@ -a Mou'
 
 take () {
@@ -26,13 +26,5 @@ take () {
 
 new () {
   touch $1
-  slime $1
+  subl $1
 }
-
-# L4L
-lead () {
-  cd ~/Sites/Link4Lead/app
-  clear
-}
-alias testFront='cd ~/Sites/Link4Lead/app/mvc/Tests/Features/FrontOffice'
-alias hat='mvc/ExtLib/Vendor/bin/behat -c ~/Sites/Link4Lead/www/app/Tests/Acceptance/FrontOffice/behat.yml -p anb'
